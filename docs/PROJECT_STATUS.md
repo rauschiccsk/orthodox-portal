@@ -1,389 +1,295 @@
-# 📊 MONASTIER ONLINE - PROJECT STATUS
+# 📊 PROJECT STATUS - Monastier Online
 
-**Last Updated:** 2025-10-19  
-**Version:** 1.0.0  
+**Last Updated:** 2025-10-19 21:30  
+**Version:** 1.0.1  
 **Phase:** Initial Setup - Development
 
 ---
 
-## 🎯 OVERALL PROGRESS
+## 🎯 Overall Progress
 
 ```
-Progress: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 7% (1/14 tasks)
+Progress: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 14% (2/14 tasks)
 
-STORY 1: Základná Infraštruktúra     █░░░░░░░░░░░░░  7% (1/14)
-STORY 2: Liturgický Kalendár         ░░░░░░░░░░░░░░  0% (0/10)
-STORY 3: Modlitby a Bohoslužby       ░░░░░░░░░░░░░░  0% (0/12)
-STORY 4: AI Preklad Systém           ░░░░░░░░░░░░░░  0% (0/8)
-STORY 5: Knižnica a Obsahový Systém  ░░░░░░░░░░░░░░  0% (0/10)
-STORY 6: Médiá (Audio/Video)         ░░░░░░░░░░░░░░  0% (0/8)
-STORY 7: Mapa Chrámov a Komunita     ░░░░░░░░░░░░░░  0% (0/6)
-STORY 8: User Management             ░░░░░░░░░░░░░░  0% (0/10)
+STORY 1: Základná Infraštruktúra     ██░░░░░░░░░░░░  14% (2/14)
+STORY 2: Liturgický Kalendár         ░░░░░░░░░░░░░░   0% (0/10)
+STORY 3: Modlitby a Bohoslužby       ░░░░░░░░░░░░░░   0% (0/12)
+STORY 4: AI Preklad Systém           ░░░░░░░░░░░░░░   0% (0/8)
+STORY 5: Knižnica a Obsahový Systém  ░░░░░░░░░░░░░░   0% (0/10)
+STORY 6: Médiá (Audio/Video)         ░░░░░░░░░░░░░░   0% (0/8)
+STORY 7: Mapa Chrámov a Komunita     ░░░░░░░░░░░░░░   0% (0/6)
+STORY 8: User Management             ░░░░░░░░░░░░░░   0% (0/10)
 ```
 
----
-
-## 📅 CURRENT SPRINT
-
-**Sprint:** Initial Setup  
-**Start Date:** 2025-10-19  
-**Target End:** 2025-10-26  
-**Active Story:** STORY 1 - Základná Infraštruktúra  
-**Active Task:** Task 1.2 - Folder structure creation
+**Current Story:** STORY 1 - Základná Infraštruktúra  
+**Next Milestone:** STORY 1 Complete (ETA: 2025-10-26)
 
 ---
 
-## ✅ RECENT ACHIEVEMENTS
+## 📅 Recent Activity
 
-### 2025-10-19 (Today)
-- ✅ **Git repository initialized** - Created local repository with proper .gitignore
-- ✅ **GitHub repository created** - `rauschiccsk/orthodox-portal`
-- ✅ **Documentation structure created** - FULL_PROJECT_CONTEXT.md, README.md
-- ✅ **Domain registered** - monastier.online
-- ✅ **Email created** - monastierkomarno@gmail.com
-- 🔄 **Working on Task 1.2** - Folder structure creation
+### 2025-10-19 (Nedeľa) - Session 2
+- ✅ **STORY 1 Task 1.2** - Folder structure creation **COMPLETE**
+- ✅ Created 78 folders and 137 files
+- ✅ Bash and Windows batch scripts created
+- ✅ Project structure tested and verified
+- 📝 Session notes created
+- 🔄 Progress: 7% → 14%
+
+### 2025-10-19 (Nedeľa) - Session 1
+- ✅ **STORY 1 Task 1.1** - Git repository setup **COMPLETE**
+- ✅ GitHub repository created
+- ✅ Documentation structure created
+- ✅ Domain registered (monastier.online)
+- ✅ Email created (monastierkomarno@gmail.com)
 
 ---
 
-## 🔄 ACTIVE STORY: STORY 1 - Základná Infraštruktúra
+## 🚀 STORY 1: Základná Infraštruktúra
 
 **Status:** 🔄 In Progress  
-**Priority:** CRITICAL  
-**Progress:** 7% (1/14 tasks)  
+**Progress:** ██░░░░░░░░░░░░ 14% (2/14 tasks)  
 **Started:** 2025-10-19  
-**Target Completion:** 2025-10-26
+**ETA:** 2025-10-26
 
 ### Tasks Status
 
-#### ✅ Completed Tasks
-- [x] **Task 1.1** - Git repository setup + .gitignore ✅ (2025-10-19)
-
-#### 🔄 In Progress
-- [ ] **Task 1.2** - Folder structure creation 🔄
-  - Status: In Progress
-  - Started: 2025-10-19
-  - Blocking: None
-  - Next: Create complete app folder structure
-
-#### ⏳ Upcoming Tasks (This Week)
-- [ ] **Task 1.3** - FastAPI základná aplikácia
-- [ ] **Task 1.4** - PostgreSQL databáza setup
-- [ ] **Task 1.5** - MongoDB setup (optional)
-- [ ] **Task 1.6** - Redis cache setup
-
-#### 📋 Remaining Tasks (Next Week)
-- [ ] **Task 1.7** - Základné Jinja2 templates
-- [ ] **Task 1.8** - TailwindCSS integration
-- [ ] **Task 1.9** - User authentication system (JWT)
-- [ ] **Task 1.10** - Admin panel základy
-- [ ] **Task 1.11** - Deployment na server
-- [ ] **Task 1.12** - Doména a SSL certifikát
-- [ ] **Task 1.13** - Testing framework setup
-- [ ] **Task 1.14** - CI/CD pipeline (GitHub Actions)
+| # | Task | Status | Progress | Notes |
+|---|------|--------|----------|-------|
+| 1.1 | Git repository setup + .gitignore | ✅ | 100% | Complete |
+| 1.2 | Folder structure creation | ✅ | 100% | Complete - 78 folders, 137 files |
+| 1.3 | FastAPI základná aplikácia | ⏳ | 0% | **NEXT** - Starting 2025-10-20 |
+| 1.4 | PostgreSQL databáza setup | ⏳ | 0% | Planned |
+| 1.5 | MongoDB setup (optional) | ⏳ | 0% | Planned |
+| 1.6 | Redis cache setup | ⏳ | 0% | Planned |
+| 1.7 | Základné Jinja2 templates | ⏳ | 0% | Planned |
+| 1.8 | TailwindCSS integration | ⏳ | 0% | Planned |
+| 1.9 | User authentication system (JWT) | ⏳ | 0% | Planned |
+| 1.10 | Admin panel základy | ⏳ | 0% | Planned |
+| 1.11 | Deployment na server | ⏳ | 0% | Planned |
+| 1.12 | Doména a SSL certifikát | ⏳ | 0% | Planned |
+| 1.13 | Testing framework setup | ⏳ | 0% | Planned |
+| 1.14 | CI/CD pipeline (GitHub Actions) | ⏳ | 0% | Planned |
 
 ---
 
-## 📊 STORY 2-8 STATUS
+## 📂 Project Structure
 
-### STORY 2: Liturgický Kalendár 📅
-- **Status:** ⏳ Planned
-- **Priority:** HIGH
-- **Progress:** 0% (0/10 tasks)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2025-10-27
+```
+orthodox-portal/
+├── ✅ app/                    # Main application (47 files)
+│   ├── api/v1/               # API endpoints (8 files)
+│   ├── core/                 # Core functionality (4 files)
+│   ├── models/               # SQLAlchemy models (9 files)
+│   ├── schemas/              # Pydantic schemas (8 files)
+│   ├── services/             # Business logic (7 files)
+│   ├── db/repositories/      # Database repositories (4 files)
+│   ├── utils/                # Utility functions (5 files)
+│   ├── middleware/           # Custom middleware (3 files)
+│   └── tasks/                # Background tasks (3 files)
+├── ✅ frontend/               # Templates & static files (28 files)
+│   ├── templates/            # Jinja2 templates (20 files)
+│   └── static/               # CSS, JS, images (8 files)
+├── ✅ alembic/                # Database migrations (2 files)
+├── ✅ tests/                  # Test suite (7 files)
+├── ✅ scripts/                # Utility scripts (5 files)
+├── ✅ n8n/                    # n8n workflows (empty)
+├── ✅ config/                 # Configuration (4 files)
+├── ✅ docs/                   # Documentation (7+ files)
+├── ✅ data/                   # Data files (5 JSON files)
+└── ✅ logs/                   # Application logs (empty)
 
-### STORY 3: Modlitby a Bohoslužby 🙏
-- **Status:** ⏳ Planned
-- **Priority:** HIGH
-- **Progress:** 0% (0/12 tasks)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2025-11-10
-
-### STORY 4: AI Preklad Systém 🤖
-- **Status:** ⏳ Planned
-- **Priority:** HIGH
-- **Progress:** 0% (0/8 tasks)
-- **Depends On:** STORY 1-3 partial
-- **Estimated Start:** 2025-11-24
-
-### STORY 5: Knižnica a Obsahový Systém 📚
-- **Status:** ⏳ Planned
-- **Priority:** MEDIUM
-- **Progress:** 0% (0/10 tasks)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2025-12-08
-
-### STORY 6: Médiá (Audio/Video) 🎬
-- **Status:** ⏳ Planned
-- **Priority:** MEDIUM
-- **Progress:** 0% (0/8 tasks)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2025-12-22
-
-### STORY 7: Mapa Chrámov a Komunita 🗺️
-- **Status:** ⏳ Planned
-- **Priority:** LOW
-- **Progress:** 0% (0/6 tasks)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2026-01-12
-
-### STORY 8: User Management & Notifications 🔔
-- **Status:** 🔄 Partially started (JWT in STORY 1)
-- **Priority:** HIGH
-- **Progress:** 5% (0/10 tasks, but JWT being built)
-- **Depends On:** STORY 1 complete
-- **Estimated Start:** 2026-01-26
+Total: 78 folders, 137 files created
+```
 
 ---
 
-## 🚫 BLOCKERS
+## 🎯 Next Session Plan (2025-10-20)
+
+### STORY 1 Task 1.3 - FastAPI základná aplikácia
+
+**Objectives:**
+1. [ ] Create `app/main.py` - FastAPI entry point
+2. [ ] Create `app/core/config.py` - Configuration management
+3. [ ] Create `app/core/security.py` - JWT & password hashing
+4. [ ] Implement basic endpoints:
+   - [ ] `GET /` - Root endpoint
+   - [ ] `GET /health` - Health check
+   - [ ] `GET /api/v1/info` - API info
+5. [ ] Add CORS middleware
+6. [ ] Add error handling middleware
+7. [ ] Test application locally (`uvicorn app.main:app --reload`)
+8. [ ] Update `requirements.txt` with all dependencies
+9. [ ] Commit & push to GitHub
+
+**Estimated Time:** 2-3 hours  
+**Priority:** HIGH
+
+---
+
+## 🔄 All Stories Overview
+
+### 📋 Story Details
+
+| Story | Tasks | Est. Time | Status | Priority |
+|-------|-------|-----------|--------|----------|
+| **STORY 1:** Základná Infraštruktúra | 14 | 3-4 weeks | 🔄 14% | CRITICAL |
+| **STORY 2:** Liturgický Kalendár | 10 | 2-3 weeks | ⏳ Planned | HIGH |
+| **STORY 3:** Modlitby a Bohoslužby | 12 | 3-4 weeks | ⏳ Planned | HIGH |
+| **STORY 4:** AI Preklad Systém | 8 | 2 weeks | ⏳ Planned | HIGH |
+| **STORY 5:** Knižnica a Obsahový Systém | 10 | 3 weeks | ⏳ Planned | MEDIUM |
+| **STORY 6:** Médiá (Audio/Video) | 8 | 2 weeks | ⏳ Planned | MEDIUM |
+| **STORY 7:** Mapa Chrámov a Komunita | 6 | 1-2 weeks | ⏳ Planned | LOW |
+| **STORY 8:** User Management | 10 | 2 weeks | ⏳ Planned | HIGH |
+
+**Total:** 78 tasks across 8 stories
+
+---
+
+## 📊 Development Statistics
+
+### Session Stats
+```
+Total Sessions: 2
+Total Time: ~2.5 hours
+Session 1: ~1 hour (Task 1.1)
+Session 2: ~1.5 hours (Task 1.2)
+```
+
+### Code Stats
+```
+Files Created: 137
+Folders Created: 78
+Lines of Code: 0 (structure only)
+Git Commits: 1 (+ 1 planned)
+```
+
+### Completion Stats
+```
+Tasks Completed: 2/78 (2.6% overall)
+Story 1 Complete: 2/14 (14%)
+Days Active: 1
+Current Velocity: 2 tasks/day
+```
+
+---
+
+## ⚠️ Blockers & Issues
 
 ### Current Blockers
-**None currently** ✅
+- **None** ✅
 
-### Resolved Blockers
-- None yet
-
----
-
-## 🎯 NEXT ACTIONS
-
-### Today (2025-10-19)
-1. ✅ Complete Task 1.2 - Folder structure creation
-2. 🔄 Start Task 1.3 - FastAPI základná aplikácia
-3. 📝 Commit and push to GitHub
-
-### This Week (2025-10-20 to 2025-10-26)
-1. Complete Tasks 1.3-1.6 (FastAPI, PostgreSQL, MongoDB, Redis)
-2. Set up basic development environment
-3. Create first API endpoint
-4. Test database connections
-
-### Next Week (2025-10-27 to 2025-11-02)
-1. Complete Tasks 1.7-1.10 (Templates, TailwindCSS, Auth, Admin)
-2. Deploy to development server
-3. Configure domain and SSL
-4. Start STORY 2 planning
+### Risks & Dependencies
+- None identified yet
+- All dependencies available
+- No external blockers
 
 ---
 
-## 📈 MILESTONES
+## 📝 Technical Decisions Log
 
-### Milestone 1: Infrastructure Complete ⚙️
-- **Target Date:** 2025-10-26
-- **Status:** 🔄 In Progress (7%)
-- **Tasks:** STORY 1 (all 14 tasks)
-- **Deliverables:**
-  - Working FastAPI application
-  - PostgreSQL + MongoDB + Redis configured
-  - User authentication (JWT)
-  - Basic admin panel
-  - Deployed to server with SSL
+### Architecture Decisions ✅
+- ✅ **Framework:** FastAPI (Python 3.11+)
+- ✅ **Database:** PostgreSQL 15+ (relational data)
+- ✅ **NoSQL:** MongoDB 7+ (flexible content - saints)
+- ✅ **Cache:** Redis 7+ (sessions, cache)
+- ✅ **Templates:** Jinja2 (server-side rendering)
+- ✅ **CSS:** TailwindCSS 3.x
+- ✅ **JS:** Alpine.js (lightweight)
+- ✅ **Auth:** JWT tokens + OAuth2
+- ✅ **Automation:** n8n workflows
+- ✅ **Background:** Celery
+- ✅ **Storage:** MinIO / S3 (media files)
 
-### Milestone 2: MVP Ready 🎯
-- **Target Date:** 2025-12-15
-- **Status:** ⏳ Planned
-- **Tasks:** STORY 1-4 complete
-- **Deliverables:**
-  - Liturgical calendar (2025 complete)
-  - 50+ prayers in Slovak
-  - AI translation system working
-  - User registration and login
-  - Mobile responsive design
-
-### Milestone 3: V1.0 Release 🚀
-- **Target Date:** 2026-02-28
-- **Status:** ⏳ Planned
-- **Tasks:** All STORIES 1-8 complete
-- **Deliverables:**
-  - Complete Slovak content (500+ items)
-  - 80%+ Hungarian translations
-  - Media library functional
-  - Church directory
-  - 10+ active users
+### Development Decisions ✅
+- ✅ **Pattern:** Repository pattern for database
+- ✅ **Structure:** Service layer for business logic
+- ✅ **Deployment:** Single-server (not microservices)
+- ✅ **Testing:** pytest (unit, integration, e2e)
+- ✅ **CI/CD:** GitHub Actions
+- ✅ **Server:** Nginx + Gunicorn + systemd
 
 ---
 
-## 💻 TECHNICAL STATUS
+## 🔗 Important Links
 
-### Infrastructure
-```yaml
-Server: Not yet deployed
-Domain: monastier.online (registered, not configured)
-SSL: Not configured
-Database: Not installed
-Cache: Not configured
-```
+### Project Links
+- **GitHub Repo:** https://github.com/rauschiccsk/orthodox-portal
+- **Branch:** `develop` (active) | `main` (production)
+- **Domain:** monastier.online (registered, not deployed)
+- **Email:** monastierkomarno@gmail.com
 
-### Development Environment
-```yaml
-Repository: ✅ https://github.com/rauschiccsk/orthodox-portal
-Local Path: C:\Development\orthodox-portal
-Python Version: 3.11+ (required, not verified)
-Virtual Environment: Not created
-Dependencies: Not installed
-```
+### Development Paths
+- **Dev Path:** `C:\Development\orthodox-portal`
+- **Deploy Path:** `C:\Deployment\orthodox-portal` (TBD)
 
-### Code Status
-```yaml
-Lines of Code: ~0 (documentation only)
-Test Coverage: N/A (no tests yet)
-API Endpoints: 0
-Database Tables: 0 (schema designed)
-```
+### Documentation
+- **Full Context:** `docs/FULL_PROJECT_CONTEXT.md`
+- **This File:** `docs/PROJECT_STATUS.md`
+- **Sessions:** `docs/sessions/2025-10-19_session.md`
 
 ---
 
-## 📝 TECHNICAL DEBT
+## 📅 Project Timeline
 
-### High Priority
-- None yet (too early)
+### Milestones
 
-### Medium Priority
-- None yet
-
-### Low Priority
-- None yet
-
----
-
-## 🐛 KNOWN ISSUES
-
-### Critical
-- None
-
-### High
-- None
-
-### Medium
-- None
-
-### Low
-- None
+| Milestone | Target Date | Status | Progress |
+|-----------|-------------|--------|----------|
+| **STORY 1 Complete** | 2025-10-26 | 🔄 In Progress | 14% |
+| **STORY 2 Complete** | 2025-11-09 | ⏳ Planned | 0% |
+| **STORY 3 Complete** | 2025-11-30 | ⏳ Planned | 0% |
+| **STORY 4 Complete** | 2025-12-14 | ⏳ Planned | 0% |
+| **MVP Release** | 2025-12-20 | ⏳ Planned | 0% |
+| **V1.0 Release** | 2025-12-25 | ⏳ Planned | 0% |
 
 ---
 
-## 📊 STATISTICS
+## 🎯 Success Criteria
 
-### Development Time
-```
-Total Time Spent: ~4 hours
-- Planning & Documentation: 3 hours
-- Setup & Configuration: 1 hour
-- Development: 0 hours
-- Testing: 0 hours
-```
+### MVP (Minimum Viable Product) - Stories 1-4
+- [ ] User registration & login working
+- [ ] Liturgický kalendár na 2025 complete
+- [ ] 50+ základných modlitieb (SK) available
+- [ ] Responsive design (mobile & desktop)
+- [ ] SSL certificate active
+- [ ] Email notifications functional
+- [ ] Slovak content 100% ready
+- [ ] Hungarian translation 50%+ ready
 
-### Commits
-```
-Total Commits: 1
-- Features: 1
-- Fixes: 0
-- Documentation: 0
-- Refactoring: 0
-```
-
-### Files Created
-```
-Documentation: 5 files
-Source Code: 0 files
-Tests: 0 files
-Configuration: 0 files
-Total: 5 files
-```
+### V1.0 Release - All Stories Complete
+- [ ] Všetky STORIES 1-8 dokončené
+- [ ] Slovenský obsah kompletný (500+ položiek)
+- [ ] Maďarský preklad 80%+
+- [ ] 10+ aktívnych testovacích používateľov
+- [ ] 95%+ uptime za 30 dní
+- [ ] Page load time < 2s
+- [ ] Mobile-friendly (90+ Google PageSpeed)
+- [ ] PWA support enabled
+- [ ] All critical bugs resolved
 
 ---
 
-## 🎓 LESSONS LEARNED
+## 📞 Contact Information
 
-### What Went Well
-- ✅ Comprehensive planning and documentation
-- ✅ Clear project structure defined
-- ✅ GitHub repository set up properly
-- ✅ Domain secured early
-
-### What Could Be Improved
-- 🔄 Need to start actual coding soon
-- 🔄 Set up development environment
-
-### Action Items for Next Session
-1. Create folder structure (Task 1.2)
-2. Set up virtual environment
-3. Install dependencies
-4. Create first FastAPI endpoint
+- **Developer:** ICC
+- **Email:** monastierkomarno@gmail.com
+- **Location:** Komárno, Slovakia
+- **GitHub:** @rauschiccsk
 
 ---
 
-## 📞 TEAM COMMUNICATION
+## 🔄 Update History
 
-### Last Team Meeting
-- **Date:** N/A (solo developer)
-- **Topics:** N/A
-- **Decisions:** N/A
-
-### Next Team Meeting
-- **Date:** N/A
-- **Agenda:** N/A
+| Date | Version | Changes |
+|------|---------|---------|
+| 2025-10-19 | 1.0.1 | Task 1.2 complete, progress bars added |
+| 2025-10-19 | 1.0.0 | Initial PROJECT_STATUS created |
 
 ---
 
-## 🔄 CHANGELOG
-
-### v1.0.0 - 2025-10-19
-- Initial project setup
-- Created comprehensive documentation
-- GitHub repository initialized
-- Domain registered (monastier.online)
-- Email created (monastierkomarno@gmail.com)
-
----
-
-## 🎯 SUCCESS METRICS
-
-### Current Metrics
-```
-User Registrations: 0
-Active Users: 0
-Content Items: 0
-API Response Time: N/A
-Uptime: N/A
-Test Coverage: N/A
-```
-
-### Target Metrics (MVP)
-```
-User Registrations: 10+
-Active Users: 5+
-Content Items: 100+
-API Response Time: < 500ms
-Uptime: 95%+
-Test Coverage: 80%+
-```
-
----
-
-## 📌 IMPORTANT NOTES
-
-### For Next Session
-1. 🔥 Complete folder structure creation
-2. 🔥 Set up Python virtual environment
-3. 🔥 Install all dependencies from requirements.txt
-4. 🔥 Create main.py with first API endpoint
-5. 🔥 Commit and push all changes
-
-### Project Health
-```
-Overall Health: 🟢 HEALTHY
-Schedule: 🟢 ON TRACK
-Budget: 🟢 N/A (personal project)
-Quality: 🟢 GOOD (comprehensive planning)
-Team Morale: 🟢 EXCELLENT
-```
-
----
-
-**Document Version:** 1.0.0  
-**Last Updated:** 2025-10-19  
-**Next Update:** 2025-10-20
+**Status Report Generated:** 2025-10-19 21:30  
+**Next Update:** 2025-10-20 (after Task 1.3)  
+**Format Version:** 2.0
 
 🕊️ **S Bohom!**
