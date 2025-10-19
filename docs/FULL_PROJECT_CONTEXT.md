@@ -2,79 +2,50 @@
 
 **Complete Single Source of Truth**  
 **Last Updated:** 2025-10-19  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Initial Setup - Development Phase
 
 ---
 
-## 🤖 CRITICAL INSTRUCTIONS FOR CLAUDE - READ FIRST!
+## 🤖 INSTRUCTIONS FOR CLAUDE
 
-**⚠️ WHEN THIS IS THE FIRST MESSAGE IN A CONVERSATION:**
+### When you see this document at the start of a conversation:
 
-### STEP 1: Recognize the Context
-This document means the user wants to continue working on Monastier Online project.
-
-### STEP 2: DO NOT LOAD ANYTHING ELSE
-🚨 **DO NOT** fetch, load, or attempt to access ANY other files from GitHub  
-🚨 **DO NOT** try to load project_file_access.json  
-🚨 **DO NOT** try to load PROJECT_STATUS.md  
-🚨 **DO NOT** try to load config files  
-🚨 **DO NOT** try to load ANY other URLs  
-
-**WHY?** Because this document contains ALL the context you need right now. Additional files may not exist yet as project is in early setup phase.
-
-### STEP 3: Respond Immediately
-After reading this document, immediately respond with EXACTLY this:
-
-**"✅ Projekt načítaný. Čo robíme?"**
-
-Nothing more, nothing less. Do not mention missing files, do not try to load anything.
-
-### STEP 4: Wait for User
-Wait for the user to tell you what they want to work on today.
-
-### STEP 5: When User Gives Instructions
-- Check the "CURRENT PROJECT STATUS" section below for latest state
-- If you need specific files, ASK the user to provide them
-- NEVER assume project structure
-- Work based on what user tells you
-
----
-
-**Repository Info:**
+**STEP 1: Load Project File Access Map**
 ```
-GitHub: https://github.com/rauschiccsk/orthodox-portal
-Branch: main
-Dev Path: C:\Development\orthodox-portal
-Deploy Path: C:\Deployment\orthodox-portal
+https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json
 ```
 
----
+**STEP 2: Load All Critical Files**
+- Parse the JSON file
+- Load all files marked with `"always_load": true`
+- Load all files with `"priority": 1` 
+- Optionally load files with `"priority": 2`
+- **SILENTLY SKIP** any files that don't exist (no error messages!)
 
-## 📊 CURRENT PROJECT STATUS
+**STEP 3: Respond to User**
+```
+✅ Projekt načítaný. Čo robíme?
+```
 
-### Overview
-- **Project:** Monastier Online (monastier.online)
-- **Phase:** Initial Setup
-- **Overall Progress:** 7% (1/14 tasks in STORY 1)
-- **Active Story:** STORY 1 - Základná Infraštruktúra
-- **Last Session:** 2025-10-19
-- **Next Milestone:** STORY 1 Complete (2025-10-26)
+### Critical Rules
+- ✅ **NEVER** show error messages for missing files
+- ✅ **NEVER** show warnings about files not found
+- ✅ **ALWAYS** load silently - if file exists load it, if not skip it
+- ✅ After loading, simply say "✅ Projekt načítaný. Čo robíme?"
+- ✅ Use Slovak language for all communication
+- ✅ Be concise and actionable
 
-### Recent Achievements
-- ✅ 2025-10-19: Git repository initialized
-- ✅ 2025-10-19: GitHub repository created
-- ✅ 2025-10-19: Documentation structure created
-- ✅ 2025-10-19: Domain registered (monastier.online)
-- ✅ 2025-10-19: Email created (monastierkomarno@gmail.com)
-- 🔄 2025-10-19: Working on development setup
+### What This Gives You
+After loading, you will have access to:
+- 📄 Complete project documentation and vision
+- 📊 Current project status and progress
+- 💻 All source code files (that exist)
+- ⚙️ Configuration and settings
+- 🧪 Tests and migrations
+- 📝 Session notes and history
 
-### Active Tasks
-- [ ] STORY 1 Task 1.2 - Folder structure creation (In Progress)
-- [ ] STORY 1 Task 1.3 - FastAPI základná aplikácia (Next)
-
-### Blockers
-- None currently
+**You will see the COMPLETE project, not just documentation.**
 
 ---
 
@@ -87,23 +58,24 @@ Deploy Path: C:\Deployment\orthodox-portal
 - **Email:** monastierkomarno@gmail.com
 - **Účel:** Centrálny portál pre pravoslávnych veriacich na Slovensku a v Maďarsku
 - **Jazyky:** Slovenčina (primárne), Maďarčina (sekundárne)
-- **Vývojár:** ICC
+- **Vývojár:** ICC (Innovation & Consulting Center)
+- **Developer:** rauschiccsk
 - **Lokalizácia:** Komárno, SK
 - **Typ projektu:** Single-server deployment (nie multi-client)
 
 ### Vízia Projektu
 
 Vytvoriť pre slovenských a maďarských pravoslávnych veriacich **jedno centrálne miesto na webe**, kde šikovne a prehľadne môžu nájsť:
-- Liturgický kalendár s dennými čítaniami
-- Kompletné modlitby a bohoslužobné texty
-- Duchovnú literatúru a životy svätých
-- Audio/video nahrávky liturgií
-- Mapu pravoslávnych chrámov
-- Aktuálne informácie a udalosti
-- User registration a notifikácie
+- 📅 Liturgický kalendár s dennými čítaniami
+- 🙏 Kompletné modlitby a bohoslužobné texty
+- 📚 Duchovnú literatúru a životy svätých
+- 🎬 Audio/video nahrávky liturgií
+- 🗺️ Mapu pravoslávnych chrámov
+- 📰 Aktuálne informácie a udalosti
+- 👤 User registration a notifikácie
 
 ### Inšpirácia
-- **azbyka.ru** - komplexný ruský portál
+- **azbyka.ru** - komplexný ruský portál (vzor)
 - **posledovanie.ru** - liturgické texty
 
 ---
@@ -119,35 +91,14 @@ Development path: C:\Development\orthodox-portal
 Deployment path: C:\Deployment\orthodox-portal
 ```
 
-### Prístup k súborom
-```
-Project File Access:
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json
-
-Kritické súbory:
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/MASTER_CONTEXT.md
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py
-https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/requirements.txt
-```
-
 ### Začiatok každého nového chatu
 ```markdown
 Pokračujeme na Monastier Online projekte.
 
-KRITICKÉ - Najprv načítaj GitHub súbory:
-1. https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json
-2. https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md
-3. https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md
-
-GitHub: https://github.com/rauschiccsk/orthodox-portal
-Aktuálny stav: [pozri PROJECT_STATUS.md]
+https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md
 
 Dnes chcem pracovať na: [STORY X, Task X.Y]
 ```
-
-**Po načítaní odpovedz: ✅ Projekt načítaný. Čo robíme?**
 
 ---
 
@@ -169,7 +120,7 @@ Backend:
 
 Databases:
   - PostgreSQL 15+ (monastier_online)
-  - MongoDB 7+ (flexible content)
+  - MongoDB 7+ (flexible content - saints)
   - Redis 7+ (cache, sessions)
 
 Storage:
@@ -199,7 +150,7 @@ Server:
 
 AI Services:
   - Anthropic Claude API (translation SK ↔ HU)
-  - OpenAI Whisper (transcription)
+  - OpenAI Whisper (audio transcription)
 ```
 
 ### System Architecture Diagram
@@ -438,7 +389,6 @@ CREATE TABLE notifications (
 ### STORY 2: Liturgický Kalendár 📅
 **Status:** ⏳ Planned  
 **Priority:** HIGH  
-**Estimated:** 2-3 týždne  
 **Depends On:** STORY 1
 
 **Key Features:**
@@ -452,186 +402,79 @@ CREATE TABLE notifications (
 
 ### STORY 3: Modlitby a Bohoslužby 🙏
 **Status:** ⏳ Planned  
-**Priority:** HIGH  
-**Estimated:** 3-4 týždne
+**Priority:** HIGH
 
 **Key Features:**
 - Morning & evening prayers
 - Akathists & Canons
-- Divine Liturgy texts (Sv. Ján Zlatoústy, Sv. Bazil Veľký)
+- Divine Liturgy texts
 - Vespers & Matins
 - Church Slavonic support
-- PDF print-friendly export
+- PDF export
 - Offline PWA mode
 
 ### STORY 4: AI Preklad Systém 🤖
 **Status:** ⏳ Planned  
-**Priority:** HIGH  
-**Estimated:** 2 týždne
+**Priority:** HIGH
 
 **Key Features:**
 - Claude API integration
-- Glossary management (liturgical terms)
-- Batch translation scripts
-- Quality assurance workflow
-- n8n automation pipeline
-- Manual review interface
-- Version control for translations
+- Glossary management
+- Batch translation
+- Quality assurance
+- n8n automation
+- Manual review
 
 ### STORY 5: Knižnica a Obsahový Systém 📚
 **Status:** ⏳ Planned  
-**Priority:** MEDIUM  
-**Estimated:** 3 týždne
+**Priority:** MEDIUM
 
 **Key Features:**
 - Book database & categories
 - Full-text search
 - Saints' lives (MongoDB)
-- Holy Scripture (Bible)
-- Catechism
-- Reading progress tracking
-- Bookmark system
+- Holy Scripture
+- Reading progress
+- Bookmarks
 
 ### STORY 6: Médiá (Audio/Video) 🎬
 **Status:** ⏳ Planned  
-**Priority:** MEDIUM  
-**Estimated:** 2 týždne
+**Priority:** MEDIUM
 
 **Key Features:**
-- MinIO/S3 storage setup
-- Audio/video player integration
-- Liturgy recordings upload
+- MinIO/S3 storage
+- Audio/video player
+- Liturgy recordings
 - Podcast feed
-- Transcription (Whisper)
-- Live streaming support
-- Media CDN optimization
+- Transcription
+- Live streaming
 
 ### STORY 7: Mapa Chrámov a Komunita 🗺️
 **Status:** ⏳ Planned  
-**Priority:** LOW  
-**Estimated:** 1-2 týždne
+**Priority:** LOW
 
 **Key Features:**
 - Church database
-- Google Maps integration
+- Google Maps
 - Service schedules
 - Parish contacts
 - Event calendar
-- Newsletter system
+- Newsletter
 
 ### STORY 8: User Management & Notifications 🔔
-**Status:** 🔄 Partially started (part of STORY 1)  
-**Priority:** HIGH  
-**Estimated:** 2 týždne
+**Status:** 🔄 Partially started  
+**Priority:** HIGH
 
 **Key Features:**
 - User registration & login
 - Email verification
-- Password reset flow
-- User profile & settings
-- Email notifications (n8n)
+- Password reset
+- User profile
+- Email notifications
 - Push notifications
-- Newsletter subscription
-- Bookmarks system
-- Reading progress tracking
-- OAuth2 (Google, Facebook)
-
----
-
-## 🤖 N8N WORKFLOWS
-
-### 1. Daily Calendar Update
-```yaml
-Trigger: Cron - každý deň 00:01
-Steps:
-  1. Python Script - Generate denné čítania
-  2. Claude API - Translate to Hungarian
-  3. PostgreSQL - Insert/Update calendar_events
-  4. Redis - Clear calendar cache
-  5. Email - Send to subscribed users
-  6. Social Media - Post to Facebook
-```
-
-### 2. User Registration Welcome
-```yaml
-Trigger: Webhook - new user registered
-Steps:
-  1. Generate verification token
-  2. Email - Send verification email
-  3. Wait for verification
-  4. Email - Send welcome email
-  5. PostgreSQL - Update preferences
-```
-
-### 3. Daily Notifications
-```yaml
-Trigger: Cron - každý deň 07:00
-Steps:
-  1. PostgreSQL - Get users with notifications enabled
-  2. Get today's readings
-  3. For each user:
-     - Email daily reading
-     - Push notification (if enabled)
-  4. Log sent notifications
-```
-
-### 4. Content Translation Pipeline
-```yaml
-Trigger: Webhook - new content added
-Steps:
-  1. PostgreSQL - Fetch untranslated content
-  2. Claude API - Translate SK → HU
-  3. Quality Check - Validate terms
-  4. Email - Notify admin for review
-  5. PostgreSQL - Save translation
-  6. Redis - Clear cache
-```
-
-### 5. Weekly Newsletter
-```yaml
-Trigger: Cron - nedeľa 18:00
-Steps:
-  1. Generate this week's highlights
-  2. Create HTML template
-  3. Get subscribed users
-  4. Send personalized emails
-  5. Track analytics
-```
-
----
-
-## 🎨 DESIGN SYSTEM
-
-### Color Palette
-```css
-:root {
-  --primary: #8B4513;        /* Sienna Brown */
-  --secondary: #DAA520;      /* Goldenrod */
-  --accent: #B22222;         /* Firebrick Red */
-  --background: #F5F5DC;     /* Beige */
-  --text: #2F4F4F;           /* Dark Slate Gray */
-  --success: #228B22;
-  --warning: #FF8C00;
-  --error: #DC143C;
-}
-```
-
-### Typography
-```css
---font-heading: 'Georgia', serif;
---font-body: 'Open Sans', sans-serif;
---font-slavonic: 'Monomakh Unicode', serif;
-```
-
-### Key UX Features
-- 🔍 Full-text search
-- 📱 Mobile-first responsive design
-- 🌙 Dark mode
-- 🔖 Bookmarks
-- 📥 Offline mode (PWA)
-- 🎧 Background audio player
-- 📖 Print-friendly pages
-- 🔔 Push notifications
+- Newsletter
+- Bookmarks
+- OAuth2
 
 ---
 
@@ -673,137 +516,53 @@ STORY-8 Task 8.1 complete"
 
 ---
 
-## 🧪 TESTING STRATEGY
+## 🎨 DESIGN SYSTEM
 
-### Test Coverage Goals
-- **Unit tests:** 80%+ coverage
-- **Integration tests:** All API endpoints
-- **E2E tests:** Critical user journeys
-
-### Testing Tools
-- **pytest** - Unit & integration tests
-- **pytest-cov** - Coverage reporting
-- **httpx** - API testing
-- **faker** - Test data generation
-
----
-
-## 🚀 DEPLOYMENT
-
-### Server Requirements
-```yaml
-OS: Ubuntu 22.04 LTS
-CPU: 2+ cores
-RAM: 4GB+ 
-Disk: 50GB+ SSD
-Python: 3.11+
-PostgreSQL: 15+
-Redis: 7+
-Nginx: 1.22+
+### Color Palette
+```css
+:root {
+  --primary: #8B4513;        /* Sienna Brown */
+  --secondary: #DAA520;      /* Goldenrod */
+  --accent: #B22222;         /* Firebrick Red */
+  --background: #F5F5DC;     /* Beige */
+  --text: #2F4F4F;           /* Dark Slate Gray */
+  --success: #228B22;
+  --warning: #FF8C00;
+  --error: #DC143C;
+}
 ```
 
-### Deployment Checklist
-- [ ] Server access (SSH/RDP)
-- [ ] Domain configured (monastier.online)
-- [ ] DNS A records set
-- [ ] SSL certificate (Let's Encrypt)
-- [ ] PostgreSQL installed
-- [ ] Redis installed
-- [ ] Python 3.11 + venv
-- [ ] Git repository cloned
-- [ ] Dependencies installed
-- [ ] Environment variables set
-- [ ] Database migrations run
-- [ ] Systemd service created
-- [ ] Nginx configured
-- [ ] Firewall rules set
-- [ ] Backups configured
-
----
-
-## 🔒 SECURITY
-
-### Best Practices
-- ✅ HTTPS only
-- ✅ Password hashing (bcrypt, 12 rounds)
-- ✅ JWT tokens (15 min access, 7 day refresh)
-- ✅ Rate limiting (60/min, 1000/hour)
-- ✅ CSRF protection
-- ✅ SQL injection prevention (SQLAlchemy)
-- ✅ XSS prevention (template escaping)
-- ✅ Input validation (Pydantic)
-- ✅ Environment variables for secrets
-- ✅ Regular security updates
-
-### Secrets Management
-```bash
-# .env file (NEVER commit)
-DATABASE_URL=postgresql://...
-REDIS_URL=redis://...
-JWT_SECRET=...
-ANTHROPIC_API_KEY=sk-ant-...
-SMTP_PASSWORD=...
+### Typography
+```css
+--font-heading: 'Georgia', serif;
+--font-body: 'Open Sans', sans-serif;
+--font-slavonic: 'Monomakh Unicode', serif;
 ```
-
----
-
-## 📊 MONITORING & ANALYTICS
-
-### Metrics to Track
-- **Performance:** Response times, DB queries
-- **Users:** Registrations, logins, active users
-- **Content:** Most viewed prayers, books, media
-- **Errors:** 500 errors, failed API calls
-- **Infrastructure:** CPU, RAM, disk usage
-
-### Tools
-- **Application:** Built-in logging (loguru)
-- **User Analytics:** Google Analytics / Matomo
-- **Uptime:** UptimeRobot
-- **Errors:** Sentry (optional)
-
----
-
-## 📚 RESOURCES
-
-### Content Sources
-- **pravoslavie.sk** - Slovenský obsah
-- **azbyka.ru** - Inšpirácia, vzor
-- **OCA.org** - Anglické zdroje
-- **Byzantinos.eu** - Liturgické texty
-- **pravoslavie.ru** - Ruský obsah
-
-### Technical Documentation
-- **FastAPI:** https://fastapi.tiangolo.com/
-- **PostgreSQL:** https://www.postgresql.org/docs/
-- **n8n:** https://docs.n8n.io/
-- **TailwindCSS:** https://tailwindcss.com/docs
-- **Claude API:** https://docs.anthropic.com/
 
 ---
 
 ## ⚠️ CRITICAL REMINDERS
 
 ### Pre každý nový chat:
-1. 🔥 **VŽDY NAJPRV** načítaj GitHub súbory
-2. 🔥 **NIKDY** nepredpokladaj štruktúru projektu
-3. 🔥 **VŽDY** over aktuálny stav v PROJECT_STATUS.md
-4. 🔥 **VŽDY** commit + push po dokončení práce
-5. 🔥 **VŽDY** aktualizuj session notes
+1. 🔥 User pošle URL na FULL_PROJECT_CONTEXT.md
+2. 🔥 Claude načíta tento dokument
+3. 🔥 Claude načíta project_file_access.json
+4. 🔥 Claude načíta všetky critical súbory
+5. 🔥 Claude odpovie: "✅ Projekt načítaný. Čo robíme?"
+6. 🔥 ŽIADNE varovania o chýbajúcich súboroch
 
 ### Git Rules:
 - ✅ Commit často, malé zmeny
 - ✅ Opisné commit messages
 - ✅ Test pred commit
 - ✅ Pull pred push
-- ✅ Feature branches pre nové features
+- ✅ Feature branches
 
 ### Documentation Rules:
 - ✅ Update FULL_PROJECT_CONTEXT pri veľkých zmenách
-- ✅ Update PROJECT_STATUS po každej session
-- ✅ Session notes každý deň
+- ✅ Update PROJECT_STATUS.md po každej session
 - ✅ Code comments v slovenčine
-- ✅ API dokumentácia vždy aktuálna
+- ✅ API dokumentácia aktuálna
 
 ---
 
@@ -828,58 +587,37 @@ SMTP_PASSWORD=...
 
 ---
 
-## 📝 RECENT COMMITS
-
-```bash
-# 2025-10-19
-feat: Initial project setup - Monastier Online
-- Created comprehensive project structure
-- Documentation (MASTER_CONTEXT, PROJECT_STATUS, README)
-- Configuration templates
-- Requirements.txt with all dependencies
-- Session template for daily work logs
-
-STORY-1 Task 1.1 complete
-Version: 1.0.0
-```
-
----
-
 ## 📞 KONTAKT
 
 - **Email:** monastierkomarno@gmail.com
 - **GitHub:** https://github.com/rauschiccsk/orthodox-portal
 - **Doména:** https://monastier.online
+- **Developer:** rauschiccsk (ICC)
 
 ---
 
 ## 🤖 FINAL REMINDER FOR CLAUDE
 
-**If you just loaded this document:**
+**After loading all files, you should have complete visibility into:**
+- ✅ Project vision and architecture
+- ✅ Current status and progress
+- ✅ All source code (that exists)
+- ✅ Configuration
+- ✅ Tests
+- ✅ Documentation
 
-✅ You have everything you need  
-✅ Do NOT load any other files  
-✅ Respond with: **"✅ Projekt načítaný. Čo robíme?"**  
-✅ Then wait for user's instructions  
+**Simply respond:**
+```
+✅ Projekt načítaný. Čo robíme?
+```
 
-**If user asks for specific files later, they will provide URLs directly.**
-
-**Common mistakes to avoid:**
-- ❌ Trying to load project_file_access.json
-- ❌ Trying to load PROJECT_STATUS.md  
-- ❌ Trying to load config_template.py
-- ❌ Mentioning "missing files" or "failed to load"
-- ❌ Being "helpful" by loading things automatically
-
-**The correct response is simply:**
-**"✅ Projekt načítaný. Čo robíme?"**
+**Then wait for user's instruction.**
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 1.1.0  
 **Created:** 2025-10-19  
 **Last Updated:** 2025-10-19  
 **Status:** Active Development  
-**Next Session:** TBD
 
 🕊️ **S Bohom!**

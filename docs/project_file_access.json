@@ -1,117 +1,394 @@
 {
-  "project_name": "orthodox-portal",
-  "project_display_name": "Monastier Online",
-  "domain": "monastier.online",
-  "email": "monastierkomarno@gmail.com",
+  "project_name": "Monastier Online",
   "repository": "https://github.com/rauschiccsk/orthodox-portal",
-  "branch": "main",
+  "base_url": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/",
   "last_updated": "2025-10-19",
-  "paths": {
-    "development": "C:\\Development\\orthodox-portal",
-    "deployment": "C:\\Deployment\\orthodox-portal"
-  },
-  "files": {
-    "documentation": {
-      "full_project_context": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
-      "master_context": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/MASTER_CONTEXT.md",
-      "project_status": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md",
-      "readme": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/README.md",
-      "project_file_access": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json",
-      "system_prompt": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/SYSTEM_PROMPT.md",
-      "quick_start": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/QUICK_START.md"
+  "version": "1.0.0",
+
+  "critical_files": [
+    {
+      "path": "docs/FULL_PROJECT_CONTEXT.md",
+      "description": "Complete project documentation and context",
+      "priority": 1,
+      "always_load": true
     },
-    "configuration": {
-      "config_template": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py",
-      "requirements": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/requirements.txt",
-      "gitignore": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/.gitignore"
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "description": "Current project status, progress, and active tasks",
+      "priority": 1,
+      "always_load": true
     },
-    "application": {
-      "main": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/main.py",
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/__init__.py"
+    {
+      "path": "docs/MASTER_CONTEXT.md",
+      "description": "Master context document",
+      "priority": 2,
+      "always_load": false
     },
-    "routes": {
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/__init__.py",
-      "calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/calendar.py",
-      "prayers": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/prayers.py",
-      "library": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/library.py",
-      "media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/media.py",
-      "admin": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/admin.py",
-      "api": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/api.py"
+    {
+      "path": "README.md",
+      "description": "Project README",
+      "priority": 2,
+      "always_load": true
     },
-    "models": {
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/__init__.py",
-      "user": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/user.py",
-      "calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/calendar.py",
-      "prayer": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/prayer.py",
-      "book": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/book.py",
-      "saint": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/saint.py",
-      "media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/media.py"
+    {
+      "path": "requirements.txt",
+      "description": "Python dependencies",
+      "priority": 1,
+      "always_load": true
     },
-    "services": {
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/__init__.py",
-      "calendar_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/calendar_service.py",
-      "translation_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/translation_service.py",
-      "search_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/search_service.py",
-      "export_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/export_service.py"
-    },
-    "scripts": {
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/__init__.py",
-      "init_database": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/init_database.py",
-      "generate_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/generate_calendar.py",
-      "translate_content": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/translate_content.py",
-      "import_content": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/import_content.py",
-      "backup_database": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/backup_database.py",
-      "sync_media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/sync_media.py"
-    },
-    "n8n_workflows": {
-      "daily_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/daily_calendar_update.json",
-      "translation": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/content_translation.json",
-      "notifications": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/user_notifications.json",
-      "backup": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/automated_backup.json",
-      "social_media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/social_media_posting.json"
-    },
-    "stories": {
-      "story_1": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-1-design.md",
-      "story_2": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-2-design.md",
-      "story_3": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-3-design.md",
-      "story_4": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-4-design.md",
-      "story_5": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-5-design.md",
-      "story_6": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-6-design.md",
-      "story_7": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-7-design.md",
-      "story_8": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-8-design.md"
-    },
-    "tests": {
-      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/__init__.py",
-      "test_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_calendar.py",
-      "test_auth": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_auth.py",
-      "test_api": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_api.py",
-      "test_translation": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_translation.py"
-    },
-    "deployment": {
-      "systemd_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/deployment/systemd/monastier-online.service",
-      "nginx_config": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/deployment/nginx.conf",
-      "install_script": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/deployment/install.sh"
+    {
+      "path": ".gitignore",
+      "description": "Git ignore rules",
+      "priority": 3,
+      "always_load": false
     }
-  },
-  "quick_access": {
-    "start_new_chat": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
-    "critical_files": [
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md",
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py",
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/requirements.txt"
+  ],
+
+  "configuration": [
+    {
+      "path": "config/config_template.py",
+      "description": "Configuration template",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": ".env.example",
+      "description": "Environment variables example",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "app_core": [
+    {
+      "path": "app/__init__.py",
+      "description": "App initialization",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/main.py",
+      "description": "FastAPI main application",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/config.py",
+      "description": "Application configuration",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/database.py",
+      "description": "Database connection and session",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/models.py",
+      "description": "SQLAlchemy models",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/schemas.py",
+      "description": "Pydantic schemas",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/dependencies.py",
+      "description": "FastAPI dependencies",
+      "priority": 2,
+      "always_load": true
+    }
+  ],
+
+  "api_endpoints": [
+    {
+      "path": "app/api/__init__.py",
+      "description": "API package initialization",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "app/api/auth.py",
+      "description": "Authentication endpoints",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/api/calendar.py",
+      "description": "Liturgical calendar endpoints",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/api/prayers.py",
+      "description": "Prayers endpoints",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/api/books.py",
+      "description": "Books library endpoints",
+      "priority": 2,
+      "always_load": true
+    },
+    {
+      "path": "app/api/churches.py",
+      "description": "Churches directory endpoints",
+      "priority": 2,
+      "always_load": true
+    },
+    {
+      "path": "app/api/media.py",
+      "description": "Media files endpoints",
+      "priority": 2,
+      "always_load": true
+    },
+    {
+      "path": "app/api/users.py",
+      "description": "User management endpoints",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/api/admin.py",
+      "description": "Admin panel endpoints",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "services": [
+    {
+      "path": "app/services/__init__.py",
+      "description": "Services package initialization",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "app/services/auth_service.py",
+      "description": "Authentication business logic",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/services/calendar_service.py",
+      "description": "Calendar calculations and logic",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/services/translation_service.py",
+      "description": "Claude API translation service",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/services/email_service.py",
+      "description": "Email notification service",
+      "priority": 2,
+      "always_load": true
+    },
+    {
+      "path": "app/services/cache_service.py",
+      "description": "Redis cache service",
+      "priority": 2,
+      "always_load": true
+    }
+  ],
+
+  "utilities": [
+    {
+      "path": "app/utils/__init__.py",
+      "description": "Utils package initialization",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "app/utils/security.py",
+      "description": "Security utilities (hashing, JWT)",
+      "priority": 1,
+      "always_load": true
+    },
+    {
+      "path": "app/utils/validators.py",
+      "description": "Input validators",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "app/utils/helpers.py",
+      "description": "Helper functions",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "database": [
+    {
+      "path": "migrations/env.py",
+      "description": "Alembic environment configuration",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "description": "Alembic migration template",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "migrations/versions/__init__.py",
+      "description": "Migrations versions package",
+      "priority": 3,
+      "always_load": false
+    }
+  ],
+
+  "templates": [
+    {
+      "path": "app/templates/base.html",
+      "description": "Base HTML template",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "app/templates/index.html",
+      "description": "Homepage template",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "app/templates/calendar.html",
+      "description": "Calendar page template",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "app/templates/prayers.html",
+      "description": "Prayers page template",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "static": [
+    {
+      "path": "app/static/css/main.css",
+      "description": "Main CSS file",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "app/static/js/main.js",
+      "description": "Main JavaScript file",
+      "priority": 3,
+      "always_load": false
+    }
+  ],
+
+  "tests": [
+    {
+      "path": "tests/__init__.py",
+      "description": "Tests package initialization",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "tests/conftest.py",
+      "description": "Pytest configuration and fixtures",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "tests/test_auth.py",
+      "description": "Authentication tests",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "tests/test_calendar.py",
+      "description": "Calendar tests",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "tests/test_prayers.py",
+      "description": "Prayers tests",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "deployment": [
+    {
+      "path": "deploy/nginx.conf",
+      "description": "Nginx configuration",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "deploy/monastier.service",
+      "description": "Systemd service file",
+      "priority": 3,
+      "always_load": false
+    },
+    {
+      "path": "deploy/deploy.sh",
+      "description": "Deployment script",
+      "priority": 3,
+      "always_load": false
+    }
+  ],
+
+  "n8n_workflows": [
+    {
+      "path": "n8n/calendar_daily_update.json",
+      "description": "Daily calendar update workflow",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "n8n/translation_pipeline.json",
+      "description": "Translation automation workflow",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "n8n/user_registration.json",
+      "description": "User registration workflow",
+      "priority": 2,
+      "always_load": false
+    },
+    {
+      "path": "n8n/daily_notifications.json",
+      "description": "Daily notifications workflow",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "session_notes": [
+    {
+      "path": "docs/sessions/2025-10-19-session.md",
+      "description": "Session notes from 2025-10-19",
+      "priority": 2,
+      "always_load": false
+    }
+  ],
+
+  "loading_instructions": {
+    "strategy": "Load all files with priority 1, then priority 2 if needed",
+    "on_missing_file": "Skip silently without error messages",
+    "on_load_complete": "Respond with: ✅ Projekt načítaný. Čo robíme?",
+    "notes": [
+      "Always load files with always_load: true",
+      "Files with priority 1 are critical for understanding project state",
+      "Files with priority 2 are important but optional",
+      "Files with priority 3 can be skipped unless specifically needed"
     ]
-  },
-  "current_status": {
-    "phase": "Initial Setup",
-    "active_story": "STORY 1 - Základná Infraštruktúra",
-    "progress": "7% (1/14 tasks)",
-    "last_session": "2025-10-19",
-    "next_milestone": "STORY 1 Complete (2025-10-26)"
-  },
-  "notes": {
-    "setup": "Copy config_template.py to config.py and fill in values",
-    "never_commit": "config/config.py, .env files",
-    "new_chat_instructions": "Paste FULL_PROJECT_CONTEXT.md URL to load project"
   }
 }
