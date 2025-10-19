@@ -7,24 +7,46 @@
 
 ---
 
-## 🤖 INSTRUCTIONS FOR CLAUDE
+## 🤖 CRITICAL INSTRUCTIONS FOR CLAUDE - READ FIRST!
 
-**When you see this document at the start of a conversation:**
+**⚠️ WHEN THIS IS THE FIRST MESSAGE IN A CONVERSATION:**
 
-1. This means the user wants to continue working on the Monastier Online project
-2. **DO NOT attempt to load any additional files from GitHub**
-3. All necessary context is contained in this document
-4. After reading this document, respond with: **"✅ Projekt načítaný. Čo robíme?"**
-5. Then wait for user's instructions on what to work on
-6. Check the "CURRENT PROJECT STATUS" section below for the latest state
-7. NEVER assume project structure - when in doubt, ask the user or check GitHub directly
+### STEP 1: Recognize the Context
+This document means the user wants to continue working on Monastier Online project.
 
-**Repository URLs:**
+### STEP 2: DO NOT LOAD ANYTHING ELSE
+🚨 **DO NOT** fetch, load, or attempt to access ANY other files from GitHub  
+🚨 **DO NOT** try to load project_file_access.json  
+🚨 **DO NOT** try to load PROJECT_STATUS.md  
+🚨 **DO NOT** try to load config files  
+🚨 **DO NOT** try to load ANY other URLs  
+
+**WHY?** Because this document contains ALL the context you need right now. Additional files may not exist yet as project is in early setup phase.
+
+### STEP 3: Respond Immediately
+After reading this document, immediately respond with EXACTLY this:
+
+**"✅ Projekt načítaný. Čo robíme?"**
+
+Nothing more, nothing less. Do not mention missing files, do not try to load anything.
+
+### STEP 4: Wait for User
+Wait for the user to tell you what they want to work on today.
+
+### STEP 5: When User Gives Instructions
+- Check the "CURRENT PROJECT STATUS" section below for latest state
+- If you need specific files, ASK the user to provide them
+- NEVER assume project structure
+- Work based on what user tells you
+
+---
+
+**Repository Info:**
 ```
 GitHub: https://github.com/rauschiccsk/orthodox-portal
-Main Branch: https://github.com/rauschiccsk/orthodox-portal/tree/main
-Development Path: C:\Development\orthodox-portal
-Deployment Path: C:\Deployment\orthodox-portal
+Branch: main
+Dev Path: C:\Development\orthodox-portal
+Deploy Path: C:\Deployment\orthodox-portal
 ```
 
 ---
@@ -831,32 +853,26 @@ Version: 1.0.0
 
 ---
 
-## 🤖 REMINDER FOR CLAUDE
+## 🤖 FINAL REMINDER FOR CLAUDE
 
-**If this is the first message in a conversation:**
+**If you just loaded this document:**
 
-You have just loaded the FULL_PROJECT_CONTEXT for Monastier Online project.
+✅ You have everything you need  
+✅ Do NOT load any other files  
+✅ Respond with: **"✅ Projekt načítaný. Čo robíme?"**  
+✅ Then wait for user's instructions  
 
-**What to do:**
-1. ✅ You already have all the context you need from this document
-2. ✅ Respond to user with: **"✅ Projekt načítaný. Čo robíme?"**
-3. ⏳ Wait for user's instruction on what to work on today
-4. 📋 Check "CURRENT PROJECT STATUS" section above for latest state
-5. 🔥 Follow all rules in CRITICAL REMINDERS section
+**If user asks for specific files later, they will provide URLs directly.**
 
-**DO NOT:**
-- ❌ Try to load additional files from GitHub
-- ❌ Assume project structure without verification
-- ❌ Start working without user's explicit instruction
+**Common mistakes to avoid:**
+- ❌ Trying to load project_file_access.json
+- ❌ Trying to load PROJECT_STATUS.md  
+- ❌ Trying to load config_template.py
+- ❌ Mentioning "missing files" or "failed to load"
+- ❌ Being "helpful" by loading things automatically
 
-**Remember:**
-- When user asks to create/modify code, verify current structure first by asking
-- ALWAYS commit + push after completing work
-- ALWAYS update PROJECT_STATUS in this document if state changes significantly
-- Follow Git workflow and commit conventions from this document
-
-**If you need to verify current files on GitHub:**
-Ask user: "Chcete, aby som si overil aktuálne súbory na GitHub? Aké súbory potrebujem načítať?"
+**The correct response is simply:**
+**"✅ Projekt načítaný. Čo robíme?"**
 
 ---
 

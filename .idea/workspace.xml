@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="docs: Add missing documentation files&#10;&#10;- config_template.py&#10;- PROJECT_STATUS.md&#10;- project_file_access.json&#10;- MASTER_CONTEXT.md&#10;&#10;These files are required for GitHub-based workflow">
+    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="fix: Add missing files for GitHub workflow&#10;&#10;Added/Updated files:&#10;- project_file_access.json: Complete file structure mapping&#10;  - All current and planned files&#10;  - Quick access URLs&#10;  - Current project status&#10;  &#10;- PROJECT_STATUS.md: Current project state&#10;  - Story progress (1/14 tasks in STORY 1)&#10;  - Recent commits&#10;  - Milestones and timeline&#10;  - Metrics and team info&#10;  &#10;- FULL_PROJECT_CONTEXT.md: Updated to not require additional loads&#10;&#10;This fixes the GitHub load workflow issue where Claude&#10;tried to fetch missing files.&#10;&#10;Now the workflow is:&#10;1. Paste FULL_PROJECT_CONTEXT.md URL in new chat&#10;2. Claude loads it (self-contained, no additional fetches)&#10;3. Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;STORY-1 Task 1.2 complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/PROJECT_STATUS.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/PROJECT_STATUS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project_file_access.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project_file_access.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +87,22 @@
       <option name="project" value="LOCAL" />
       <updated>1760900525770</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: Add missing files for GitHub workflow&#10;&#10;Added/Updated files:&#10;- project_file_access.json: Complete file structure mapping&#10;  - All current and planned files&#10;  - Quick access URLs&#10;  - Current project status&#10;  &#10;- PROJECT_STATUS.md: Current project state&#10;  - Story progress (1/14 tasks in STORY 1)&#10;  - Recent commits&#10;  - Milestones and timeline&#10;  - Metrics and team info&#10;  &#10;- FULL_PROJECT_CONTEXT.md: Updated to not require additional loads&#10;&#10;This fixes the GitHub load workflow issue where Claude&#10;tried to fetch missing files.&#10;&#10;Now the workflow is:&#10;1. Paste FULL_PROJECT_CONTEXT.md URL in new chat&#10;2. Claude loads it (self-contained, no additional fetches)&#10;3. Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;STORY-1 Task 1.2 complete">
+      <option name="closed" value="true" />
+      <created>1760901467771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760901467771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="docs: Add SYSTEM_PROMPT and FULL_PROJECT_CONTEXT&#10;&#10;Created comprehensive documentation for GitHub-based workflow:&#10;&#10;SYSTEM_PROMPT.md:&#10;- Complete project overview&#10;- Critical rules and reminders&#10;- Template for new chat sessions&#10;- Quick reference URLs&#10;&#10;FULL_PROJECT_CONTEXT.md:&#10;- Combined MASTER_CONTEXT + PROJECT_STATUS&#10;- Single source of truth for project&#10;- Complete architecture documentation&#10;- All STORIES and development plan&#10;- Database schemas&#10;- n8n workflows&#10;- Deployment guidelines&#10;&#10;This enables seamless project continuation across chat sessions&#10;by loading project context directly from GitHub.&#10;&#10;Usage: Paste SYSTEM_PROMPT.md content or load FULL_PROJECT_CONTEXT.md&#10;URL at start of new chat session.&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: documentation infrastructure complete" />
     <MESSAGE value="docs: Add GitHub-based workflow for new chat sessions&#10;&#10;Updated FULL_PROJECT_CONTEXT.md:&#10;- Added explicit instructions for Claude&#10;- When user pastes URL, Claude automatically loads project&#10;- Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;- Same workflow as supplier_invoice_loader project&#10;&#10;Added QUICK_START.md:&#10;- Simple guide for starting new chat sessions&#10;- Just paste one URL and go&#10;- Quick reference for common tasks&#10;&#10;Usage:&#10;  New chat → Paste URL → Claude loads → Ready to work!&#10;  https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: GitHub workflow complete" />
     <MESSAGE value="docs: Add missing documentation files&#10;&#10;- config_template.py&#10;- PROJECT_STATUS.md&#10;- project_file_access.json&#10;- MASTER_CONTEXT.md&#10;&#10;These files are required for GitHub-based workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Add missing documentation files&#10;&#10;- config_template.py&#10;- PROJECT_STATUS.md&#10;- project_file_access.json&#10;- MASTER_CONTEXT.md&#10;&#10;These files are required for GitHub-based workflow" />
+    <MESSAGE value="fix: Add missing files for GitHub workflow&#10;&#10;Added/Updated files:&#10;- project_file_access.json: Complete file structure mapping&#10;  - All current and planned files&#10;  - Quick access URLs&#10;  - Current project status&#10;  &#10;- PROJECT_STATUS.md: Current project state&#10;  - Story progress (1/14 tasks in STORY 1)&#10;  - Recent commits&#10;  - Milestones and timeline&#10;  - Metrics and team info&#10;  &#10;- FULL_PROJECT_CONTEXT.md: Updated to not require additional loads&#10;&#10;This fixes the GitHub load workflow issue where Claude&#10;tried to fetch missing files.&#10;&#10;Now the workflow is:&#10;1. Paste FULL_PROJECT_CONTEXT.md URL in new chat&#10;2. Claude loads it (self-contained, no additional fetches)&#10;3. Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;STORY-1 Task 1.2 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Add missing files for GitHub workflow&#10;&#10;Added/Updated files:&#10;- project_file_access.json: Complete file structure mapping&#10;  - All current and planned files&#10;  - Quick access URLs&#10;  - Current project status&#10;  &#10;- PROJECT_STATUS.md: Current project state&#10;  - Story progress (1/14 tasks in STORY 1)&#10;  - Recent commits&#10;  - Milestones and timeline&#10;  - Metrics and team info&#10;  &#10;- FULL_PROJECT_CONTEXT.md: Updated to not require additional loads&#10;&#10;This fixes the GitHub load workflow issue where Claude&#10;tried to fetch missing files.&#10;&#10;Now the workflow is:&#10;1. Paste FULL_PROJECT_CONTEXT.md URL in new chat&#10;2. Claude loads it (self-contained, no additional fetches)&#10;3. Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;STORY-1 Task 1.2 complete" />
   </component>
 </project>
