@@ -1,14 +1,24 @@
 {
   "project_name": "orthodox-portal",
+  "project_display_name": "Monastier Online",
+  "domain": "monastier.online",
+  "email": "monastierkomarno@gmail.com",
   "repository": "https://github.com/rauschiccsk/orthodox-portal",
   "branch": "main",
   "last_updated": "2025-10-19",
+  "paths": {
+    "development": "C:\\Development\\orthodox-portal",
+    "deployment": "C:\\Deployment\\orthodox-portal"
+  },
   "files": {
     "documentation": {
+      "full_project_context": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
       "master_context": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/MASTER_CONTEXT.md",
       "project_status": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md",
       "readme": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/README.md",
-      "project_file_access": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json"
+      "project_file_access": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json",
+      "system_prompt": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/SYSTEM_PROMPT.md",
+      "quick_start": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/QUICK_START.md"
     },
     "configuration": {
       "config_template": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py",
@@ -17,27 +27,48 @@
     },
     "application": {
       "main": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/main.py",
-      "routes_init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/__init__.py",
-      "models_init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/__init__.py",
-      "services_init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/__init__.py"
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/__init__.py"
     },
-    "database": {
-      "init_script": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/init_database.py",
-      "models_user": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/user.py",
-      "models_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/calendar.py",
-      "models_prayer": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/prayer.py"
+    "routes": {
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/__init__.py",
+      "calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/calendar.py",
+      "prayers": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/prayers.py",
+      "library": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/library.py",
+      "media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/media.py",
+      "admin": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/admin.py",
+      "api": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/routes/api.py"
+    },
+    "models": {
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/__init__.py",
+      "user": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/user.py",
+      "calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/calendar.py",
+      "prayer": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/prayer.py",
+      "book": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/book.py",
+      "saint": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/saint.py",
+      "media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/models/media.py"
+    },
+    "services": {
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/__init__.py",
+      "calendar_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/calendar_service.py",
+      "translation_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/translation_service.py",
+      "search_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/search_service.py",
+      "export_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/app/services/export_service.py"
     },
     "scripts": {
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/__init__.py",
+      "init_database": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/init_database.py",
       "generate_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/generate_calendar.py",
       "translate_content": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/translate_content.py",
       "import_content": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/import_content.py",
-      "backup_database": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/backup_database.py"
+      "backup_database": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/backup_database.py",
+      "sync_media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/scripts/sync_media.py"
     },
     "n8n_workflows": {
       "daily_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/daily_calendar_update.json",
       "translation": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/content_translation.json",
       "notifications": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/user_notifications.json",
-      "backup": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/automated_backup.json"
+      "backup": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/automated_backup.json",
+      "social_media": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/n8n_workflows/social_media_posting.json"
     },
     "stories": {
       "story_1": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-1-design.md",
@@ -50,9 +81,11 @@
       "story_8": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/stories/STORY-8-design.md"
     },
     "tests": {
+      "init": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/__init__.py",
       "test_calendar": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_calendar.py",
       "test_auth": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_auth.py",
-      "test_api": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_api.py"
+      "test_api": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_api.py",
+      "test_translation": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/tests/test_translation.py"
     },
     "deployment": {
       "systemd_service": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/deployment/systemd/monastier-online.service",
@@ -61,19 +94,24 @@
     }
   },
   "quick_access": {
-    "start_new_chat": [
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json",
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/MASTER_CONTEXT.md",
-      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md"
-    ],
-    "critical_config": [
+    "start_new_chat": "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
+    "critical_files": [
+      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/FULL_PROJECT_CONTEXT.md",
+      "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md",
       "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py",
       "https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/requirements.txt"
     ]
   },
+  "current_status": {
+    "phase": "Initial Setup",
+    "active_story": "STORY 1 - Základná Infraštruktúra",
+    "progress": "7% (1/14 tasks)",
+    "last_session": "2025-10-19",
+    "next_milestone": "STORY 1 Complete (2025-10-26)"
+  },
   "notes": {
     "setup": "Copy config_template.py to config.py and fill in values",
     "never_commit": "config/config.py, .env files",
-    "always_load_first": "project_file_access.json, MASTER_CONTEXT.md, PROJECT_STATUS.md"
+    "new_chat_instructions": "Paste FULL_PROJECT_CONTEXT.md URL to load project"
   }
 }

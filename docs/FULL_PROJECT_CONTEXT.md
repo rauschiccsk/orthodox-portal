@@ -12,20 +12,19 @@
 **When you see this document at the start of a conversation:**
 
 1. This means the user wants to continue working on the Monastier Online project
-2. Load the following critical files from GitHub:
-   - `docs/project_file_access.json`
-   - `docs/PROJECT_STATUS.md` 
-   - `config/config_template.py`
-3. After loading all files, respond with: **"✅ Projekt načítaný. Čo robíme?"**
-4. Then wait for user's instructions on what to work on
-5. ALWAYS check PROJECT_STATUS.md for current state before starting work
-6. NEVER assume project structure - always verify from GitHub files
+2. **DO NOT attempt to load any additional files from GitHub**
+3. All necessary context is contained in this document
+4. After reading this document, respond with: **"✅ Projekt načítaný. Čo robíme?"**
+5. Then wait for user's instructions on what to work on
+6. Check the "CURRENT PROJECT STATUS" section below for the latest state
+7. NEVER assume project structure - when in doubt, ask the user or check GitHub directly
 
-**Key URLs:**
+**Repository URLs:**
 ```
-Project Files: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json
-Status: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md
-Config: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py
+GitHub: https://github.com/rauschiccsk/orthodox-portal
+Main Branch: https://github.com/rauschiccsk/orthodox-portal/tree/main
+Development Path: C:\Development\orthodox-portal
+Deployment Path: C:\Deployment\orthodox-portal
 ```
 
 ---
@@ -838,19 +837,26 @@ Version: 1.0.0
 
 You have just loaded the FULL_PROJECT_CONTEXT for Monastier Online project.
 
-**Next steps:**
-1. Load additional files from GitHub (project_file_access.json, PROJECT_STATUS.md)
-2. Respond to user with: **"✅ Projekt načítaný. Čo robíme?"**
-3. Wait for user's instruction on what to work on today
-4. Follow all rules in CRITICAL REMINDERS section above
-5. Check PROJECT_STATUS.md for current state before any work
+**What to do:**
+1. ✅ You already have all the context you need from this document
+2. ✅ Respond to user with: **"✅ Projekt načítaný. Čo robíme?"**
+3. ⏳ Wait for user's instruction on what to work on today
+4. 📋 Check "CURRENT PROJECT STATUS" section above for latest state
+5. 🔥 Follow all rules in CRITICAL REMINDERS section
+
+**DO NOT:**
+- ❌ Try to load additional files from GitHub
+- ❌ Assume project structure without verification
+- ❌ Start working without user's explicit instruction
 
 **Remember:**
-- ALWAYS load GitHub files FIRST before any work
-- NEVER assume project structure
+- When user asks to create/modify code, verify current structure first by asking
 - ALWAYS commit + push after completing work
-- ALWAYS update session notes
-- Follow Git workflow and commit conventions
+- ALWAYS update PROJECT_STATUS in this document if state changes significantly
+- Follow Git workflow and commit conventions from this document
+
+**If you need to verify current files on GitHub:**
+Ask user: "Chcete, aby som si overil aktuálne súbory na GitHub? Aké súbory potrebujem načítať?"
 
 ---
 
