@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="docs: Add complete project file access system&#10;&#10;- Created project_file_access.json with all file mappings&#10;- Created PROJECT_STATUS.md for tracking progress&#10;- Updated FULL_PROJECT_CONTEXT.md with smart file loading&#10;- Claude will now load ALL critical files automatically&#10;- No error messages for missing files&#10;- Complete project visibility in new chats&#10;&#10;STORY-1 Task 1.1 improvements&#10;Version: 1.1.0">
+    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="docs: Simplify FULL_PROJECT_CONTEXT - no additional file loading&#10;&#10;- Removed instructions to load project_file_access.json&#10;- Removed instructions to load any additional files&#10;- Single document contains ALL necessary information&#10;- Claude will simply respond: ✅ Projekt načítaný. Čo robíme?&#10;- No warnings, no errors, no explanations&#10;- Clean and simple workflow&#10;&#10;STORY-1 improvements&#10;Version: 1.2.0">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/MASTER_CONTEXT.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/MASTER_CONTEXT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760903717032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="docs: Simplify FULL_PROJECT_CONTEXT - no additional file loading&#10;&#10;- Removed instructions to load project_file_access.json&#10;- Removed instructions to load any additional files&#10;- Single document contains ALL necessary information&#10;- Claude will simply respond: ✅ Projekt načítaný. Čo robíme?&#10;- No warnings, no errors, no explanations&#10;- Clean and simple workflow&#10;&#10;STORY-1 improvements&#10;Version: 1.2.0">
+      <option name="closed" value="true" />
+      <created>1760904243567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760904243567</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,6 +133,7 @@
     <MESSAGE value="fix: Add missing files for GitHub workflow&#10;&#10;Added/Updated files:&#10;- project_file_access.json: Complete file structure mapping&#10;  - All current and planned files&#10;  - Quick access URLs&#10;  - Current project status&#10;  &#10;- PROJECT_STATUS.md: Current project state&#10;  - Story progress (1/14 tasks in STORY 1)&#10;  - Recent commits&#10;  - Milestones and timeline&#10;  - Metrics and team info&#10;  &#10;- FULL_PROJECT_CONTEXT.md: Updated to not require additional loads&#10;&#10;This fixes the GitHub load workflow issue where Claude&#10;tried to fetch missing files.&#10;&#10;Now the workflow is:&#10;1. Paste FULL_PROJECT_CONTEXT.md URL in new chat&#10;2. Claude loads it (self-contained, no additional fetches)&#10;3. Claude responds: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;STORY-1 Task 1.2 complete" />
     <MESSAGE value="fix: Add explicit DO NOT LOAD instructions to FULL_PROJECT_CONTEXT&#10;&#10;Problem: Claude was trying to automatically load additional files&#10;even though they don't exist yet or aren't needed.&#10;&#10;Solution:&#10;- Added CRITICAL INSTRUCTIONS at the top with multiple  warnings&#10;- Explicitly listed what NOT to do (DO NOT load project_file_access.json, etc.)&#10;- Marked all file URLs as OPTIONAL/PLANNED&#10;- Added FINAL REMINDER at the bottom&#10;- Clear instruction to respond with just: '✅ Projekt načítaný. Čo robíme?'&#10;&#10;This should prevent Claude from attempting to load non-existent files&#10;and simply work with the self-contained FULL_PROJECT_CONTEXT.md&#10;&#10;STORY-1 Task 1.2 progress" />
     <MESSAGE value="docs: Add complete project file access system&#10;&#10;- Created project_file_access.json with all file mappings&#10;- Created PROJECT_STATUS.md for tracking progress&#10;- Updated FULL_PROJECT_CONTEXT.md with smart file loading&#10;- Claude will now load ALL critical files automatically&#10;- No error messages for missing files&#10;- Complete project visibility in new chats&#10;&#10;STORY-1 Task 1.1 improvements&#10;Version: 1.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Add complete project file access system&#10;&#10;- Created project_file_access.json with all file mappings&#10;- Created PROJECT_STATUS.md for tracking progress&#10;- Updated FULL_PROJECT_CONTEXT.md with smart file loading&#10;- Claude will now load ALL critical files automatically&#10;- No error messages for missing files&#10;- Complete project visibility in new chats&#10;&#10;STORY-1 Task 1.1 improvements&#10;Version: 1.1.0" />
+    <MESSAGE value="docs: Simplify FULL_PROJECT_CONTEXT - no additional file loading&#10;&#10;- Removed instructions to load project_file_access.json&#10;- Removed instructions to load any additional files&#10;- Single document contains ALL necessary information&#10;- Claude will simply respond: ✅ Projekt načítaný. Čo robíme?&#10;- No warnings, no errors, no explanations&#10;- Clean and simple workflow&#10;&#10;STORY-1 improvements&#10;Version: 1.2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Simplify FULL_PROJECT_CONTEXT - no additional file loading&#10;&#10;- Removed instructions to load project_file_access.json&#10;- Removed instructions to load any additional files&#10;- Single document contains ALL necessary information&#10;- Claude will simply respond: ✅ Projekt načítaný. Čo robíme?&#10;- No warnings, no errors, no explanations&#10;- Clean and simple workflow&#10;&#10;STORY-1 improvements&#10;Version: 1.2.0" />
   </component>
 </project>
