@@ -7,6 +7,29 @@
 
 ---
 
+## 🤖 INSTRUCTIONS FOR CLAUDE
+
+**When you see this document at the start of a conversation:**
+
+1. This means the user wants to continue working on the Monastier Online project
+2. Load the following critical files from GitHub:
+   - `docs/project_file_access.json`
+   - `docs/PROJECT_STATUS.md` 
+   - `config/config_template.py`
+3. After loading all files, respond with: **"✅ Projekt načítaný. Čo robíme?"**
+4. Then wait for user's instructions on what to work on
+5. ALWAYS check PROJECT_STATUS.md for current state before starting work
+6. NEVER assume project structure - always verify from GitHub files
+
+**Key URLs:**
+```
+Project Files: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/project_file_access.json
+Status: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/docs/PROJECT_STATUS.md
+Config: https://raw.githubusercontent.com/rauschiccsk/orthodox-portal/main/config/config_template.py
+```
+
+---
+
 ## 📊 CURRENT PROJECT STATUS
 
 ### Overview
@@ -806,6 +829,28 @@ Version: 1.0.0
 - **Email:** monastierkomarno@gmail.com
 - **GitHub:** https://github.com/rauschiccsk/orthodox-portal
 - **Doména:** https://monastier.online
+
+---
+
+## 🤖 REMINDER FOR CLAUDE
+
+**If this is the first message in a conversation:**
+
+You have just loaded the FULL_PROJECT_CONTEXT for Monastier Online project.
+
+**Next steps:**
+1. Load additional files from GitHub (project_file_access.json, PROJECT_STATUS.md)
+2. Respond to user with: **"✅ Projekt načítaný. Čo robíme?"**
+3. Wait for user's instruction on what to work on today
+4. Follow all rules in CRITICAL REMINDERS section above
+5. Check PROJECT_STATUS.md for current state before any work
+
+**Remember:**
+- ALWAYS load GitHub files FIRST before any work
+- NEVER assume project structure
+- ALWAYS commit + push after completing work
+- ALWAYS update session notes
+- Follow Git workflow and commit conventions
 
 ---
 

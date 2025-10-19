@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="">
+    <list default="true" id="e3c3ce7e-8047-4b12-a73e-25da99a3f9f6" name="Changes" comment="docs: Add SYSTEM_PROMPT and FULL_PROJECT_CONTEXT&#10;&#10;Created comprehensive documentation for GitHub-based workflow:&#10;&#10;SYSTEM_PROMPT.md:&#10;- Complete project overview&#10;- Critical rules and reminders&#10;- Template for new chat sessions&#10;- Quick reference URLs&#10;&#10;FULL_PROJECT_CONTEXT.md:&#10;- Combined MASTER_CONTEXT + PROJECT_STATUS&#10;- Single source of truth for project&#10;- Complete architecture documentation&#10;- All STORIES and development plan&#10;- Database schemas&#10;- n8n workflows&#10;- Deployment guidelines&#10;&#10;This enables seamless project continuation across chat sessions&#10;by loading project context directly from GitHub.&#10;&#10;Usage: Paste SYSTEM_PROMPT.md content or load FULL_PROJECT_CONTEXT.md&#10;URL at start of new chat session.&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: documentation infrastructure complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FULL_PROJECT_CONTEXT.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,19 @@
       <option name="presentableId" value="Default" />
       <updated>1760897419207</updated>
     </task>
+    <task id="LOCAL-00001" summary="docs: Add SYSTEM_PROMPT and FULL_PROJECT_CONTEXT&#10;&#10;Created comprehensive documentation for GitHub-based workflow:&#10;&#10;SYSTEM_PROMPT.md:&#10;- Complete project overview&#10;- Critical rules and reminders&#10;- Template for new chat sessions&#10;- Quick reference URLs&#10;&#10;FULL_PROJECT_CONTEXT.md:&#10;- Combined MASTER_CONTEXT + PROJECT_STATUS&#10;- Single source of truth for project&#10;- Complete architecture documentation&#10;- All STORIES and development plan&#10;- Database schemas&#10;- n8n workflows&#10;- Deployment guidelines&#10;&#10;This enables seamless project continuation across chat sessions&#10;by loading project context directly from GitHub.&#10;&#10;Usage: Paste SYSTEM_PROMPT.md content or load FULL_PROJECT_CONTEXT.md&#10;URL at start of new chat session.&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: documentation infrastructure complete">
+      <option name="closed" value="true" />
+      <created>1760899676382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760899676382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docs: Add SYSTEM_PROMPT and FULL_PROJECT_CONTEXT&#10;&#10;Created comprehensive documentation for GitHub-based workflow:&#10;&#10;SYSTEM_PROMPT.md:&#10;- Complete project overview&#10;- Critical rules and reminders&#10;- Template for new chat sessions&#10;- Quick reference URLs&#10;&#10;FULL_PROJECT_CONTEXT.md:&#10;- Combined MASTER_CONTEXT + PROJECT_STATUS&#10;- Single source of truth for project&#10;- Complete architecture documentation&#10;- All STORIES and development plan&#10;- Database schemas&#10;- n8n workflows&#10;- Deployment guidelines&#10;&#10;This enables seamless project continuation across chat sessions&#10;by loading project context directly from GitHub.&#10;&#10;Usage: Paste SYSTEM_PROMPT.md content or load FULL_PROJECT_CONTEXT.md&#10;URL at start of new chat session.&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: documentation infrastructure complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Add SYSTEM_PROMPT and FULL_PROJECT_CONTEXT&#10;&#10;Created comprehensive documentation for GitHub-based workflow:&#10;&#10;SYSTEM_PROMPT.md:&#10;- Complete project overview&#10;- Critical rules and reminders&#10;- Template for new chat sessions&#10;- Quick reference URLs&#10;&#10;FULL_PROJECT_CONTEXT.md:&#10;- Combined MASTER_CONTEXT + PROJECT_STATUS&#10;- Single source of truth for project&#10;- Complete architecture documentation&#10;- All STORIES and development plan&#10;- Database schemas&#10;- n8n workflows&#10;- Deployment guidelines&#10;&#10;This enables seamless project continuation across chat sessions&#10;by loading project context directly from GitHub.&#10;&#10;Usage: Paste SYSTEM_PROMPT.md content or load FULL_PROJECT_CONTEXT.md&#10;URL at start of new chat session.&#10;&#10;STORY-1 Task 1.2 progress&#10;docs: documentation infrastructure complete" />
   </component>
 </project>
